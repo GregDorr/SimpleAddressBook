@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Address Book </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="AddressBook.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <button class="btn btn-primary navbar-btn" onclick="newContact(event)" id="newContact">New Contact</button>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked nav-tabs" id="contacts">
+                <li><a  data-toggle="tab" onclick="hideInfo(event)">Home</a></li>
+                <li><a data-toggle="tab" id="0" onclick="displayContact(event,0)">Greg Dorr</a></li>
+                <li><a data-toggle="tab" id="1" onclick="displayContact(event,1)">Bob</a></li>
+                <li><a data-toggle="tab" id="2" onclick="displayContact(event,2)">Peter</a></li>
+                <li><a data-toggle="tab" id="3" onclick="displayContact(event,3)">Tyler Motzko</a></li>
+
+            </ul>
+        </div>
+        <div class="col-sm-8 text-left" id="display">
+            <h2>Address Book</h2>
+            <div id="info">
+                <h3>Name:
+                    <p id="name"></p>
+                    <input type="text" class="form-control" id="nameEdit">
+                </h3>
+                <h3>Phone Number:
+                    <p id="phone"></p>
+                    <input type="text" class="form-control" id="phoneEdit">
+                </h3>
+                <h3>Email:
+                    <p id="email"></p>
+                    <input type="text" class="form-control" id="emailEdit">
+                </h3>
+                <br>
+                <button type="button" class="btn btn-primary" id="editButton" onclick="editData(event)">Edit</button>
+                <button type="button" class="btn btn-primary" id="saveButton" onclick="save(event)">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center navbar-fixed-bottom">
+    <p>Created by Tyler Motzko, Greg Dorr, and Abdullahi Salan.</p>
+</footer>
+
+</body>
+</html>
