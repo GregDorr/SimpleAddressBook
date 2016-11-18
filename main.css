@@ -30,7 +30,7 @@ footer {
     .row.content {height:auto;}
 }
 
-#info{
+#info,#editButton,#saveButton{
     display: none;
 }
 
@@ -40,6 +40,10 @@ footer {
 
 #nameEdit, #phoneEdit, #emailEdit{
     display: none;
+}
+
+#newContact{
+    margin-left: 167px
 }
 
 
