@@ -1,8 +1,8 @@
 
-var contacts = [["Greg Dorr", "651-783-2528", "dorrg@augsburg.edu"],
-                ["Bob", "911", "Bob@bob.bob"],
-                ["Peter", "7", "peter@peter.peter"],
-                ["Tyler Motzko", "651-757-7513", "motzko@augsburg.edu"]];
+var contacts = [["Greg Dorr", "###-###-####", "greg@greg.greg"],
+                ["Bob", "###-###-####", "Bob@bob.bob"],
+                ["Peter", "###-###-####", "peter@peter.peter"],
+                ["Tyler Motzko", "###-###-####", "tyler@tyler.tyler"]];
 
 //displays the info for the user
 function displayContact(event, num) {
